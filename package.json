@@ -33,5 +33,7 @@
       "prettier-plugin-packagejson": "^2.2.3",
       "rimraf": "^3.0.2"
    },
-   "dependencies": {}
+   "dependencies": {
+      "is-all-utils": "^1.0.3"
+   }
 }
