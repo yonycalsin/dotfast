@@ -6,8 +6,8 @@ interface More {
 
 /**!
  * @author Yoni Calsin <helloyonicb@gmail.com>
- * @param obj More
- * @param paths string
+ * @param data More
+ * @param paths string | string[] | More
  * @param defaultVal any | undefined
  */
 const dotfast = <T = any>(
