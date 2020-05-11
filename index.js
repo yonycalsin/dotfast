@@ -18,6 +18,6 @@ var dotfast = function (data, paths, defaultVal) {
     }
     return obj || defaultVal;
 };
-exports.dtf = dotfast;
+exports.d = dotfast;
 exports.dotfast = dotfast;
 exports.default = dotfast;
