@@ -1,6 +1,6 @@
 # dotfast
 
-`Dotfast` es una funcion que te permite ingresar a un objeto, mediante puntos, y muy facil, y es compatible con typescript
+`Dotfast` is a function that allows you to enter an object, by means of points, and very easily, and is compatible with **typescript**
 
 <a href="https://github.com/yoicalsin/dotfast"><img src="https://img.shields.io/spiget/stars/1000?color=brightgreen&label=Star&logo=github" /></a>
 <a href="https://www.npmjs.com/dotfast" target="_blank">
@@ -18,7 +18,7 @@
 
 ## 🍉 Installation
 
-> Primero tendremos que instalar, para poder utilizar este maravilloso paquete.
+> First we will have to install, in order to use this wonderful package.
 
 ```bash
 # Using npm
@@ -30,18 +30,21 @@ npm add --save dotfast
 
 ## 🌎 Usage
 
-Primeramente importaremos la funcion, de la siguiente manera !
-Puedes llamar a la funcion como `dtf` o tambien como `dotfast`
+First we import the function, as follows, You can call the function as `d` or also as `dotfast`
 
 ```ts
 // For Typescript
-import dtf from 'dotfast';
+import dotfast from 'dotfast';
+// Or
+import { d } from 'dotfast';
 
-// Javascript
-const dtf = require('dotfast');
+// For Javascript
+const dotfast = require('dotfast');
+// or
+const { d } = require('dotfast');
 ```
 
--  Primero creamos un objeto con datos, para este ejemplo !
+-  First we create an object with data, for this example !
 
 ```ts
 const data = {
@@ -59,30 +62,30 @@ const data = {
    },
 };
 
-dtf(data, 'app.port');
+d(data, 'app.port');
 //=> 8080
 
-dtf(data, 'app.url');
+d(data, 'app.url');
 //=> undefined
 
 // Default option
-dtf(data, 'app.url', 'http://website.com');
+d(data, 'app.url', 'http://website.com');
 //=> http://website.com
 ```
 
-#### Retorno de array
+#### Array return
 
-`dotfast` tambien permite retornar varias selecciones, dentro de un array
+`dotfast` also allows to return several selections, within an array
 
 ```ts
-dtf(data, ['app.port', 'app.db.port', 'app.name']);
+d(data, ['app.port', 'app.db.port', 'app.name']);
 //=> [8080, 3306, "Application"]
 ```
 
--  Probemos con ES6+ o typescript
+-  Let's try ES6+ or typescript
 
 ```ts
-const [appPort, dbPort, appName] = dtf(data, [
+const [appPort, dbPort, appName] = d(data, [
    'app.port',
    'app.db.port',
    'app.name',
@@ -94,12 +97,12 @@ const [appPort, dbPort, appName] = dtf(data, [
  * */
 ```
 
-### Retorno de objeto
+### Object return
 
-`dotfast` tambien retorna como un objeto !
+`dotfast` also returns as an object !
 
 ```ts
-dtf(data, {
+d(data, {
    appPort: 'app.port',
    dbPort: "app.db.port",
    appName: 'app.name',
@@ -113,10 +116,10 @@ dtf(data, {
  * *
 ```
 
--  Probemos con ES6+ o typescript
+-  Let's try ES6+ or typescript
 
 ```ts
-const { appPort, dbPort, appName } = dtf(data, {
+const { appPort, dbPort, appName } = d(data, {
    appPort: 'app.port',
    dbPort: 'app.db.port',
    appName: 'app.name',
