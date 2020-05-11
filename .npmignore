@@ -7,3 +7,4 @@ node_modules
 .prettierrc.js
 index.ts
 tsconfig.json
+README.es.md
