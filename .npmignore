@@ -4,6 +4,7 @@ node_modules
 
 
 # Files
+CHANGELOG.md
 .prettierrc.js
 index.ts
 tsconfig.json
