@@ -1,6 +1,6 @@
 # dotfast
 
-`Dotfast` es una funcion que te permite ingresar a un objeto, mediante puntos, y muy facil, y es compatible con typescript
+`Dotfast` es una función que te permite ingresar a un objeto, mediante puntos, y muy fácil, y es compatible con **typescript**
 
 <a href="https://github.com/yoicalsin/dotfast"><img src="https://img.shields.io/spiget/stars/1000?color=brightgreen&label=Star&logo=github" /></a>
 <a href="https://www.npmjs.com/dotfast" target="_blank">
@@ -16,29 +16,32 @@
 <a href="https://twitter.com/yoicalsin" target="_blank">
 <img src="https://img.shields.io/twitter/follow/yoicalsin.svg?style=social&label=Follow"></a>
 
-## 🍉 Installation
+## 🍉 Instalacion
 
 > Primero tendremos que instalar, para poder utilizar este maravilloso paquete.
 
 ```bash
-# Using npm
+# Usando npm
 npm install --save dotfast
 
-# Using yarn
+# Usando yarn
 npm add --save dotfast
 ```
 
-## 🌎 Usage
+## 🌎 Uso
 
-Primeramente importaremos la funcion, de la siguiente manera !
-Puedes llamar a la funcion como `dtf` o tambien como `dotfast`
+Primeramente importamos la función, de la siguiente manera, Puedes llamar a la función como `d` o también como `dotfast`
 
 ```ts
-// For Typescript
-import dtf from 'dotfast';
+// Para Typescript
+import dotfast from 'dotfast';
+// o
+import { d } from 'dotfast';
 
-// Javascript
-const dtf = require('dotfast');
+// Para Javascript
+const dotfast = require('dotfast');
+// o
+const { d } = require('dotfast');
 ```
 
 -  Primero creamos un objeto con datos, para este ejemplo !
@@ -59,30 +62,30 @@ const data = {
    },
 };
 
-dtf(data, 'app.port');
+d(data, 'app.port');
 //=> 8080
 
-dtf(data, 'app.url');
+d(data, 'app.url');
 //=> undefined
 
-// Default option
-dtf(data, 'app.url', 'http://website.com');
+// Opción por defecto
+d(data, 'app.url', 'http://website.com');
 //=> http://website.com
 ```
 
 #### Retorno de array
 
-`dotfast` tambien permite retornar varias selecciones, dentro de un array
+`dotfast` también permite retornar varias selecciones, dentro de un array
 
 ```ts
-dtf(data, ['app.port', 'app.db.port', 'app.name']);
+d(data, ['app.port', 'app.db.port', 'app.name']);
 //=> [8080, 3306, "Application"]
 ```
 
 -  Probemos con ES6+ o typescript
 
 ```ts
-const [appPort, dbPort, appName] = dtf(data, [
+const [appPort, dbPort, appName] = d(data, [
    'app.port',
    'app.db.port',
    'app.name',
@@ -99,7 +102,7 @@ const [appPort, dbPort, appName] = dtf(data, [
 `dotfast` tambien retorna como un objeto !
 
 ```ts
-dtf(data, {
+d(data, {
    appPort: 'app.port',
    dbPort: "app.db.port",
    appName: 'app.name',
@@ -116,7 +119,7 @@ dtf(data, {
 -  Probemos con ES6+ o typescript
 
 ```ts
-const { appPort, dbPort, appName } = dtf(data, {
+const { appPort, dbPort, appName } = d(data, {
    appPort: 'app.port',
    dbPort: 'app.db.port',
    appName: 'app.name',
@@ -129,19 +132,19 @@ const { appPort, dbPort, appName } = dtf(data, {
  * */
 ```
 
-## ⭐ Support for
+## ⭐ Apoyo a
 
-`dotfast` is an open source project licensed by [MIT](LICENSE). You can grow thanks to the sponsors and the support of the amazing sponsors. If you want to join them, [contact me here](mailto:helloyonicb@gmail.com).
+`dotfast` es un proyecto de código abierto con licencia del [MIT](LICENSE). Puede crecer gracias a los patrocinadores y al apoyo de los increíbles patrocinadores. Si quieres unirte a ellos, [contacta conmigo aquí](mailto:helloyonicb@gmail.com).
 
-## 🎩 Stay in touch
+## 🎩 Manténgase en contacto
 
 -  Author [Yoni Calsin](https://github.com/yoicalsin)
 -  Twitter [Yoni Calsin](https://twitter.com/yoicalsin)
 
-## 🚀 Contributors
+## 🚀 Colaboradores
 
-Thanks to the wonderful people who collaborate with me !
+¡Gracias a las maravillosas personas que colaboran conmigo!
 
-## 📜 License
+## 📜 Licencia
 
 `dotfast` under [License MIT.](LICENSE)
