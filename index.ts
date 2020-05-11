@@ -35,4 +35,4 @@ const dotfast = <T = any>(
 };
 
 export default dotfast;
-export { dotfast as dtf, dotfast };
+export { dotfast as d, dotfast };
