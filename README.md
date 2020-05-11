@@ -2,6 +2,8 @@
 
 `Dotfast` is a function that allows you to enter an object, by means of points, and very easily, and is compatible with **typescript**
 
+-  [Documentación en español](README.es.md)
+
 <a href="https://github.com/yoicalsin/dotfast"><img src="https://img.shields.io/spiget/stars/1000?color=brightgreen&label=Star&logo=github" /></a>
 <a href="https://www.npmjs.com/dotfast" target="_blank">
 <img src="https://img.shields.io/npm/v/dotfast" alt="NPM Version" /></a>
