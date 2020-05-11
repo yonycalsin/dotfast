@@ -1,6 +1,6 @@
 {
    "name": "dotfast",
-   "version": "1.0.1",
+   "version": "1.0.0",
    "description": "Dotfast helps to play with the keys nested in the objects, in a very easy way, and with very little code !",
    "main": "index.js",
    "type": "index.d.ts",
