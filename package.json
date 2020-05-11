@@ -1,7 +1,7 @@
 {
    "name": "dotfast",
    "version": "1.0.1",
-   "description": "dotfast !.",
+   "description": "Dotfast helps to play with the keys nested in the objects, in a very easy way, and with very little code !",
    "main": "index.js",
    "type": "index.d.ts",
    "scripts": {
@@ -20,7 +20,9 @@
       "string-replace",
       "replaces",
       "string",
-      "dotfast"
+      "dotfast",
+      "dottie",
+      "dot-objects"
    ],
    "author": "Yoni Calsin <helloyonicb@gmail.com>",
    "license": "MIT",
