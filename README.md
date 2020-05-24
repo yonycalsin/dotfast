@@ -57,10 +57,20 @@ const data = {
          username: 'root',
          password: '',
          port: 3306,
-         tables: [],
+         tables: [
+            {
+               name: 'first_table',
+            },
+            {
+               name: 'second_table',
+            },
+         ],
       },
    },
 };
+
+d(data, 'app.db.tables[0].name');
+// => first_table
 
 d(data, 'app.port');
 //=> 8080
@@ -78,22 +88,24 @@ d(data, 'app.url', 'http://website.com');
 `dotfast` also allows to return several selections, within an array
 
 ```ts
-d(data, ['app.port', 'app.db.port', 'app.name']);
-//=> [8080, 3306, "Application"]
+d(data, ['app.port', 'app.db.port', 'app.name', 'app.db.tables[0]']);
+//=> [8080, 3306, "Application", {name: "first_table"}]
 ```
 
 -  Let's try ES6+ or typescript
 
 ```ts
-const [appPort, dbPort, appName] = d(data, [
+const [appPort, dbPort, appName, firstTable] = d(data, [
    'app.port',
    'app.db.port',
    'app.name',
+   'app.db.tables[0]',
 ]);
 /**
  * appPort => 8080
  * dbPort => 3306
  * appName => "Application"
+ * firstTable => {name: "first_table"}
  * */
 ```
 
@@ -106,12 +118,14 @@ d(data, {
    appPort: 'app.port',
    dbPort: "app.db.port",
    appName: 'app.name',
+   secondTable: 'app.db.tables[1]',
 });
 /**
  * {
  *    appPort: 8080,
  *    dbPort: 3306,
- *    appName: "Application"
+ *    appName: "Application",
+ *    secondTable: {name: "secondTable"}
  * }
  * *
 ```
@@ -123,12 +137,14 @@ const { appPort, dbPort, appName } = d(data, {
    appPort: 'app.port',
    dbPort: 'app.db.port',
    appName: 'app.name',
+   secondTable: 'app.db.tables[1]',
 });
 
 /**
  * appPort => 8080
  * dbPort => 3306
- * appName => "Application"
+ * appName => "Application",
+ * secondTable => {name: "secondTable"}
  * */
 ```
 
