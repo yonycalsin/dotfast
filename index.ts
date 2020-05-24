@@ -1,4 +1,4 @@
-import { isObj, isObject } from 'is-all-utils';
+import { isObj, isObject, isNil } from 'is-all-utils';
 
 interface More {
    [key: string]: any;
@@ -24,14 +24,16 @@ const dotfast = <T = any>(
       return payload as T;
    }
 
-   let obj = data;
-   let names: any[];
-   names = (paths as string).split('.').reverse();
-   while (names.length && obj !== undefined && obj !== null) {
-      obj = obj[names.pop()];
+   let names: any[] = (paths as string)
+      .split(/[,[\].]+?/)
+      .filter(Boolean)
+      .reverse();
+
+   while (names.length && !isNil(data)) {
+      data = data[names.pop()];
    }
 
-   return obj || defaultVal;
+   return data || defaultVal;
 };
 
 export default dotfast;
