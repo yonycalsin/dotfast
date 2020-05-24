@@ -10,13 +10,14 @@ var dotfast = function (data, paths, defaultVal) {
         }
         return payload;
     }
-    var obj = data;
-    var names;
-    names = paths.split('.').reverse();
-    while (names.length && obj !== undefined && obj !== null) {
-        obj = obj[names.pop()];
+    var names = paths
+        .split(/[,[\].]+?/)
+        .filter(Boolean)
+        .reverse();
+    while (names.length && !is_all_utils_1.isNil(data)) {
+        data = data[names.pop()];
     }
-    return obj || defaultVal;
+    return data || defaultVal;
 };
 exports.d = dotfast;
 exports.dotfast = dotfast;
