@@ -1,5 +1,10 @@
 ## 💎 Changelog
 
+### 🏆 1.0.2
+
+-  [ 🍔 ] path setted an array eg: `users[0].name`
+-  [ 🌍 ] Some variables has been renamed
+
 ### 🏆 1.0.0
 
 -  [ 🎨 ] _Spanish_ **documentation** created.

@@ -1,11 +1,13 @@
 # Folders
 .vscode
 node_modules
+test
 
 
 # Files
 CHANGELOG.md
 .prettierrc.js
 index.ts
+jest.config.js
 tsconfig.json
 README.es.md
