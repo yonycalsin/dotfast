@@ -9,7 +9,8 @@
       "start": "node index.js",
       "dev": "yarn prebuild && tsc -w",
       "dev:start": "nodemon index.js",
-      "prebuild": "rimraf index.js && rimraf index.d.ts"
+      "prebuild": "rimraf index.js && rimraf index.d.ts",
+      "test": "jest"
    },
    "repository": {
       "type": "git",
@@ -33,7 +34,10 @@
    "devDependencies": {
       "nodemon": "^2.0.3",
       "prettier-plugin-packagejson": "^2.2.3",
-      "rimraf": "^3.0.2"
+      "rimraf": "^3.0.2",
+      "@types/jest": "^24.0.25",
+      "jest": "^24.9.0",
+      "ts-jest": "^24.2.0"
    },
    "dependencies": {
       "is-all-utils": "^1.0.4"
