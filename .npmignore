@@ -8,5 +8,6 @@ test
 CHANGELOG.md
 .prettierrc.js
 index.ts
+jest.config.js
 tsconfig.json
 README.es.md
