@@ -2,19 +2,19 @@
 
 `Dotfast` is a function that allows you to enter an object, by means of points, and very easily, and is compatible with **typescript**
 
-<a href="https://github.com/yoicalsin/dotfast"><img src="https://img.shields.io/spiget/stars/1000?color=brightgreen&label=Star&logo=github" /></a>
+<a href="https://github.com/yonicalsin/dotfast"><img src="https://img.shields.io/spiget/stars/1000?color=brightgreen&label=Star&logo=github" /></a>
 <a href="https://www.npmjs.com/dotfast" target="_blank">
 <img src="https://img.shields.io/npm/v/dotfast" alt="NPM Version" /></a>
 <a href="https://www.npmjs.com/dotfast" target="_blank">
 <img src="https://img.shields.io/npm/l/dotfast" alt="Package License" /></a>
 <a href="https://www.npmjs.com/dotfast" target="_blank">
 <img src="https://img.shields.io/npm/dm/dotfast" alt="NPM Downloads" /></a>
-<a href="https://github.com/yoicalsin/dotfast" target="_blank">
+<a href="https://github.com/yonicalsin/dotfast" target="_blank">
 <img src="https://s3.amazonaws.com/assets.coveralls.io/badges/coveralls_95.svg" alt="Coverage" /></a>
-<a href="https://github.com/yoicalsin/dotfast"><img src="https://img.shields.io/badge/Github%20Page-dotfast-yellow?style=flat-square&logo=github" /></a>
-<a href="https://github.com/yoicalsin"><img src="https://img.shields.io/badge/Author-Yoni%20Calsin-blueviolet?style=flat-square&logo=appveyor" /></a>
-<a href="https://twitter.com/yoicalsin" target="_blank">
-<img src="https://img.shields.io/twitter/follow/yoicalsin.svg?style=social&label=Follow"></a>
+<a href="https://github.com/yonicalsin/dotfast"><img src="https://img.shields.io/badge/Github%20Page-dotfast-yellow?style=flat-square&logo=github" /></a>
+<a href="https://github.com/yonicalsin"><img src="https://img.shields.io/badge/Author-Yoni%20Calsin-blueviolet?style=flat-square&logo=appveyor" /></a>
+<a href="https://twitter.com/yonicalsin" target="_blank">
+<img src="https://img.shields.io/twitter/follow/yonicalsin.svg?style=social&label=Follow"></a>
 
 ## 🍉 Installation
 
@@ -154,8 +154,10 @@ const { appPort, dbPort, appName } = d(data, {
 
 ## 🎩 Stay in touch
 
--  Author [Yoni Calsin](https://github.com/yoicalsin)
--  Twitter [Yoni Calsin](https://twitter.com/yoicalsin)
+-  Github [@yonicalsin](https://github.com/yonicalsin)
+-  Twitter [@yonicalsin](https://twitter.com/yonicalsin)
+-  Instagram [@yoni_calsin](https://instagram.com/yoni_calsin)
+-  Medium [@yonicalsin](https://medium.com/yonicalsin)
 
 ## 🚀 Contributors
 
