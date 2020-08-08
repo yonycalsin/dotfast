@@ -25,7 +25,7 @@
 npm install --save dotfast
 
 # Using yarn
-npm add --save dotfast
+yarn add dotfast
 ```
 
 ## 🌎 Usage
@@ -157,7 +157,8 @@ const { appPort, dbPort, appName } = d(data, {
 -  Github [@yonicalsin](https://github.com/yonicalsin)
 -  Twitter [@yonicalsin](https://twitter.com/yonicalsin)
 -  Instagram [@yoni_calsin](https://instagram.com/yoni_calsin)
--  Medium [@yonicalsin](https://medium.com/yonicalsin)
+-  Medium [@yonicalsin](https://medium.com/@yonicalsin)
+-  Dev [@yonicalsin](https://dev.to/yonicalsin)
 
 ## 🚀 Contributors
 
