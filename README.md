@@ -16,7 +16,7 @@
 <a href="https://twitter.com/yonicalsin" target="_blank">
 <img src="https://img.shields.io/twitter/follow/yonicalsin.svg?style=social&label=Follow"></a>
 
-## 🍉 Installation
+## Installation
 
 > First we will have to install, in order to use this wonderful package.
 
@@ -28,7 +28,7 @@ npm install --save dotfast
 yarn add dotfast
 ```
 
-## 🌎 Usage
+## Usage
 
 First we import the function, as follows, You can call the function as `d` or also as `dotfast`
 
@@ -148,22 +148,19 @@ const { appPort, dbPort, appName } = d(data, {
  * */
 ```
 
-## ⭐ Support for
+## Support for
 
 `dotfast` is an open source project licensed by [MIT](LICENSE). You can grow thanks to the sponsors and the support of the amazing sponsors. If you want to join them, [contact me here](mailto:helloyonicb@gmail.com).
 
-## 🎩 Stay in touch
+## Stay in touch
 
--  Github [@yonicalsin](https://github.com/yonicalsin)
--  Twitter [@yonicalsin](https://twitter.com/yonicalsin)
--  Instagram [@yoni_calsin](https://instagram.com/yoni_calsin)
--  Medium [@yonicalsin](https://medium.com/@yonicalsin)
--  Dev [@yonicalsin](https://dev.to/yonicalsin)
+- Github [@yonycalsin](https://github.com/yonycalsin)
+- Twitter [@yonycalsin](https://twitter.com/yonycalsin)
 
-## 🚀 Contributors
+## Contributors
 
 Thanks to the wonderful people who collaborate with me !
 
-## 📜 License
+## License
 
 `dotfast` under [License MIT.](LICENSE)
